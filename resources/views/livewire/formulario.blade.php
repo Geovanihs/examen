@@ -51,69 +51,6 @@
         </div>
 
         <div class="mb-3">
-            <label>CURP</label>
-            <input  wire:model='empleado.curp' type="text" class="form-control" >
-            @error('empleado.curp')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>RFC</label>
-            <input  wire:model='empleado.rfc' type="text" class="form-control" >
-            @error('empleado.rfc')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Estado Civil</label>
-            <input  wire:model='empleado.estado_civil' type="text" class="form-control" >
-            @error('empleado.estado_civil')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Codigo Postal</label>
-            <input  wire:model='empleado.codigo_postal' type="text" class="form-control" >
-            @error('empleado.codigo_postal')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Salario</label>
-            <input  wire:model='empleado.salario' type="text" class="form-control" >
-            @error('empleado.salario')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Correo</label>
-            <input  wire:model='empleado.correo' type="text" class="form-control" >
-            @error('empleado.correo')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Horario</label>
-            <input  wire:model='empleado.horario' type="text" class="form-control" >
-            @error('empleado.horario')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Área de Trabajo</label>
-            <input  wire:model='empleado.area_de_trabajo' type="text" class="form-control" >
-            @error('empleado.area_de_trabajo')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
-            <label>Facebook</label>
-            <input  wire:model='empleado.facebook' type="text" class="form-control" >
-            @error('empleado.facebook')<span class="text-danger">Valor Requerido</span>
-            @enderror
-        </div>
-
-        <div class="mb-3">
             <label>Teléfono</label>
             <input  wire:model='empleado.telefono' type="text" class="form-control" >
             @error('empleado.telefono')<span class="text-danger">Valor Requerido</span>

@@ -22,16 +22,8 @@ class CreateEmpleadosTable extends Migration
             $table->string('sexo');
             $table->string('fecha_de_nacimiento');
             $table->string('puesto_de_trabajo');
-            $table->string('curp');
-            $table->string('rfc');
-            $table->string('estado_civil');
-            $table->string('codigo_postal');
-            $table->integer('salario');
-            $table->string('correo');
-            $table->string('horario');
-            $table->string('area_de_trabajo');
-            $table->string('facebook');
             $table->string('telefono');
+            $table->string('foto_e')->nullable();
             $table->timestamps();
         });
     }

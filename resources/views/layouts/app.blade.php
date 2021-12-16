@@ -14,15 +14,28 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="">Empresa</a>
+            @if (Auth::check())
+            <a class="text-info navbar-brand" href="#"><img style="border-radius: 22px;width:48px;height:48px;"
+                    src="{{ Storage::disk('public')->url(Auth::user()->foto_u ? Auth::user()->foto_u : 'images/usuarios/default.png') }}"
+                    alt=""> {{ Auth::user()->nombre_usuario }}</a>
+        @endif
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                @if (Auth::check())
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{route('empleados.index')}}">Mostrar Empleados</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{{route('usuarios.index')}}">Mostrar Usuarios</a>
+              </li>
+              <div style="margin-left: 750px;">
+                @livewire('login.logout')
+
+            </div>
+              @endif
           </div>
         </div>
       </nav>
@@ -32,5 +45,16 @@
       </div>
 
       @livewireScripts
+      <script>
+        livewire.on('alerta', mensaje => {
+            Swal.fire({
+                icon: 'error',
+                title: 'Ocurrio un error',
+                text: mensaje,
+            })
+        });
+    </script>
 </body>
 </html>
+
+

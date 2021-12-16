@@ -8,8 +8,7 @@
             <p class="card-text">Fecha de Nacimiento: {{$empleado->fecha_de_nacimiento}} </p>
             <p class="card-text">Puesto: {{$empleado->puesto_de_trabajo}} </p>
             <p class="card-text">Teléfono {{$empleado->telefono}} </p>
-            <button wire:click="delete" class="btn btn-primary btn-sm">Confirmar</button>
-            <a href="{{route('empleados.index')}}" class="btn btn-danger btn-sm">Cancelar</a>
+            <a href="{{route('empleados.index')}}" class="btn btn-success btn-sm">Regresar</a>
           </div>
         </div><br><br><br>
   </div>
